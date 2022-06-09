@@ -2,7 +2,7 @@ import React from 'react';
 import { Line } from '@ant-design/charts';
 import { Area } from '@ant-design/plots';
 
-//import { Container } from './styled';
+import { Container } from './styled';
 
 const Chart: React.FC = () => {
   const data = [
@@ -176,7 +176,12 @@ const Chart: React.FC = () => {
       tickCount: 5,
     },
   };
-  return <Area style={{width: '90%', height: '50vh'}} {...config} />;
+  return (
+  <Container>
+    <Area style={{width: '90%', height: '50vh'}} {...config} />
+  </Container>
+  
+  );
 }
 
 export default Chart;

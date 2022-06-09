@@ -31,10 +31,12 @@ export const Section = styled.div`
   }
   
   @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    height: 30vh;
   
-  height: 30vh;
-  
-}
+  }
+  @media (min-width: 481px) and (max-width: 767px) {
+      height: 30vh;
+  }
 `
 export const Text = styled.h1`
   color:#161F36;
@@ -63,7 +65,10 @@ export const ContainerSection = styled.div`
   @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   height: 20vh;
   
-}
+  }
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+  }
 `
 export const SectionLeft = styled.div`
   border: 0;
