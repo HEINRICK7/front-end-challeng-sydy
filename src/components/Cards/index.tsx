@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
 import { LoadingOutlined } from '@ant-design/icons';
 import { GlobalStateContext } from '../../GlobalContext/GlobalStateContext'
-import 'antd/dist/antd.css'
 import { Spin } from 'antd';
 import * as C from './styled'
 

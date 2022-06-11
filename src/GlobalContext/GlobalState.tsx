@@ -1,5 +1,5 @@
 
-import { useEffect, useState, ReactNode } from "react";
+import { useEffect, useState } from "react";
 import api from '../services/api'
 import { GlobalStateContext } from "./GlobalStateContext"
 import { Coins } from '../types/coins'
@@ -23,7 +23,7 @@ const GlobalState = ({ children }: GlobalcontextProps) => {
                 console.log(error.response.message)
             })
 
-    }, [bitcoin, loading]);
+    }, [bitcoin]);
     useEffect(() => {
 
         api.get('/historical/close.json')

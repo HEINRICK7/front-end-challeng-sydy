@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import ReactApexChart from "react-apexcharts";
 import { ApexOptions } from "apexcharts";
 import { GlobalStateContext } from '../../GlobalContext/GlobalStateContext'
-import 'antd/dist/antd.css'
 import { Container } from './styled'
 import { LoadingOutlined } from '@ant-design/icons';
 import { Spin } from 'antd';
