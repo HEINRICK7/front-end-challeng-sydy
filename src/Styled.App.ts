@@ -25,6 +25,7 @@ export const Section = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  
 
   @media only screen and (max-width: 800px) { 
     width: 100%;
@@ -47,6 +48,7 @@ export const P = styled.p`
   color:#B4B4B4;
   font-size: 1.4rem;
   margin-left: 8px;
+  margin-top: 10px;
 
 `
 export const ContainerSection = styled.div`
