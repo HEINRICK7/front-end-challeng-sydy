@@ -1,46 +1,135 @@
-# Getting Started with Create React App
+<h4 align="center"> 
+	🚧  Front-End Challenge Sydy 🚀 🚧
+</h4>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Link da Aplicação
+[Link](https://front-end-challenge-sydy.vercel.app/)
 
-## Available Scripts
 
-In the project directory, you can run:
+### 🏅  Desafio
+- [x] Para o desafio técnico queremos um pequeno aplicativo React para mostrar o preço do Bitcoin.
+- [x] Exibir na página inicial o valor para três câmbios diferentes, Dólar, Libra Esterlina e Euro
+- [x] Adicione também um gráfico simples que mostre os valores do Dólar em um período de 7 dias.
 
-### `npm start`
+---
+## 🏅  Pontos extras
+- [x] Utilizar Hooks.
+- [x] Utilizar Typescript.
+- [ ] Gerenciar o state com MobX
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
+## Introdução ao Create React App
+Este projeto foi inicializado com o Create React App.
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### 🎲 Rodando a Aplicação
+
+```bash
+# Clone este repositório
+$ git clone <https://github.com/HEINRICK7/front-end-challenge-sydy.git>
+
+# Acesse a pasta do projeto no terminal/cmd
+$ cd front-end-challenge-sydy
+
+# Instale as dependências
+$ npm install
+
+```
+Scripts Disponíveis
+No diretório do projeto, você pode executar:
+
+### `npm run start`
+Executa o aplicativo no modo de desenvolvimento.
+Abra http://localhost:3000 para visualizá-lo em seu navegador.
+
+A página será recarregada quando você fizer alterações.
+Você também pode ver erros de lint no console.
 
 ### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Inicia o executor de teste no modo de relógio interativo.
+Consulte a seção sobre como executar testes para obter mais informações.
 
 ### `npm run build`
+Compila o aplicativo para produção na pasta de compilação.
+Ele agrupa corretamente o React no modo de produção e otimiza a compilação para o melhor desempenho.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+A compilação é minificada e os nomes dos arquivos incluem os hashes.
+Seu aplicativo está pronto para ser implantado!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Consulte a seção sobre implantação para obter mais informações.
 
 ### `npm run eject`
+Nota: esta é uma operação unidirecional. Depois de ejetar, você não pode voltar!
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Se você não estiver satisfeito com a ferramenta de compilação e as opções de configuração, poderá ejetar a qualquer momento. Este comando removerá a dependência de compilação única do seu projeto.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Em vez disso, ele copiará todos os arquivos de configuração e as dependências transitivas (webpack, Babel, ESLint, etc) diretamente em seu projeto para que você tenha controle total sobre eles. Todos os comandos, exceto ejetar, ainda funcionarão, mas apontarão para os scripts copiados para que você possa ajustá-los. Neste ponto você está por conta própria.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Você não precisa usar ejetar. O conjunto de recursos com curadoria é adequado para implantações pequenas e médias, e você não deve se sentir obrigado a usar esse recurso. No entanto, entendemos que essa ferramenta não seria útil se você não pudesse personalizá-la quando estiver pronto para isso.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+---
+## Web
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Tela Home
+![Captura de tela de 2022-02-15 16-25-11](https://user-images.githubusercontent.com/14335370/169169345-f8f8a014-0df0-4f0b-8d62-3c3a4d86c5c7.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Tela CreatePlaylist
+![Captura de tela de 2022-02-15 16-27-24](https://user-images.githubusercontent.com/14335370/169172782-ce237068-966f-44eb-a529-fec70444d407.png)
+
+### Tela PlayList
+![Captura de tela de 2022-02-17 22-53-44](https://user-images.githubusercontent.com/14335370/169172998-dc8507ba-33f7-43e6-ae6a-51d2491b4121.png)
+
+### Tela AddAlbum
+![Captura de tela de 2022-02-17 22-57-14](https://user-images.githubusercontent.com/14335370/169173356-9b54f43e-68b0-401d-80cb-4411f45cf651.png)
+
+### Tela AddMusic
+![Captura de tela de 2022-02-17 22-58-34](https://user-images.githubusercontent.com/14335370/169173432-3b09ac8b-2151-4c00-80cc-062b10e0f3b1.png)
+
+
+## 🛠 Tecnologias
+
+As seguintes ferramentas foram usadas na construção do projeto:
+
+#### **Website**  ([ReactJs](https://reactjs.org/))
+
+-   **[React Router Dom](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom)**
+-   **[React Icons](https://react-icons.github.io/react-icons/)**
+-   **[Axios](https://github.com/axios/axios)**
+-   **[Antd](https://ant.design/)**
+-   **[styled-components](https://styled-components.com/)**
+
+## 💪 Como contribuir para o projeto
+
+1. Faça um **fork** do projeto.
+2. Crie uma nova branch com as suas alterações: `git checkout -b my-feature`
+3. Salve as alterações e crie uma mensagem de commit contando o que você fez: `git commit -m "feature: My new feature"`
+4. Envie as suas alterações: `git push origin my-feature`
+> Caso tenha alguma dúvida confira este [guia de como contribuir no GitHub](./CONTRIBUTING.md)
+
+---
+
+## 🦸 Autor
+
+<a href="https://github.com/HEINRICK7">
+ <img style="border-radius: 50%;" src="https://user-images.githubusercontent.com/14335370/153650468-2cdaf2d2-6ae6-47d3-b127-1ed03c1f6ca9.png" width="130px;" height="130px" alt="name"/>
+ <br />
+ <sub><b>Carlos Henrique</b></sub></a> <a href="https://github.com/HEINRICK7" title="gitHub">🚀</a>
+ <br />
+
+[![Linkedin Badge](https://img.shields.io/badge/-Henrique-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/heinrickcostta/)](https://www.linkedin.com/in/heinrickcostta/) 
+---
+## 📝 Licença
+
+Este projeto esta sobe a licença [MIT](./LICENSE).
+
+Feito com ❤️ por Carlos Henrique 👋🏽 [Entre em contato!](https://www.linkedin.com/in/heinrickcostta/)
+
+---
+
+##  Versões do README
+
+[Português 🇧🇷](./README.md)
