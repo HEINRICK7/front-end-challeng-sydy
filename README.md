@@ -74,21 +74,7 @@ Você não precisa usar ejetar. O conjunto de recursos com curadoria é adequado
 ## Web
 
 ### Tela Home
-![Captura de tela de 2022-02-15 16-25-11](https://user-images.githubusercontent.com/14335370/169169345-f8f8a014-0df0-4f0b-8d62-3c3a4d86c5c7.png)
-
-
-### Tela CreatePlaylist
-![Captura de tela de 2022-02-15 16-27-24](https://user-images.githubusercontent.com/14335370/169172782-ce237068-966f-44eb-a529-fec70444d407.png)
-
-### Tela PlayList
-![Captura de tela de 2022-02-17 22-53-44](https://user-images.githubusercontent.com/14335370/169172998-dc8507ba-33f7-43e6-ae6a-51d2491b4121.png)
-
-### Tela AddAlbum
-![Captura de tela de 2022-02-17 22-57-14](https://user-images.githubusercontent.com/14335370/169173356-9b54f43e-68b0-401d-80cb-4411f45cf651.png)
-
-### Tela AddMusic
-![Captura de tela de 2022-02-17 22-58-34](https://user-images.githubusercontent.com/14335370/169173432-3b09ac8b-2151-4c00-80cc-062b10e0f3b1.png)
-
+![Captura de tela de 2022-06-13 01-50-43](https://user-images.githubusercontent.com/14335370/173281923-15934851-e2d1-43d2-a69a-5376fbf24479.png)
 
 ## 🛠 Tecnologias
 
