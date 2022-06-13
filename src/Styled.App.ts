@@ -92,11 +92,13 @@ export const SectionRight = styled.div`
   align-items: center;
 
   @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  height: 100vh;
+    
+    height: 100vh;
   
   }
   @media only screen and (max-width: 800px) { 
     width: 100%;
+    margin-top: 100px;
     border: 0;
   }
 
