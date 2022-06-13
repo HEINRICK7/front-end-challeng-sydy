@@ -68,9 +68,6 @@ export const ContainerSection = styled.div`
   height: 20vh;
   
   }
-  @media (min-width: 481px) and (max-width: 767px) {
-    
-  }
 `
 export const SectionLeft = styled.div`
   border: 0;
@@ -88,13 +85,16 @@ export const SectionLeft = styled.div`
 `
 export const SectionRight = styled.div`
   border: 0;
-  border-bottom: 1px solid black;
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  height: 100vh;
+  
+  }
   @media only screen and (max-width: 800px) { 
     width: 100%;
     border: 0;
