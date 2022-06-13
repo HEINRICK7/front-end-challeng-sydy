@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { LoadingOutlined } from '@ant-design/icons';
 import { GlobalStateContext } from '../../GlobalContext/GlobalStateContext'
 import { Spin } from 'antd';
@@ -11,6 +11,10 @@ import Uer from '../../assets/uniao-europeia .png'
 const Cards: React.FC = () => {
   const { bitcoin, loading } = useContext(GlobalStateContext)
   const antIcon = <LoadingOutlined style={{ fontSize: 50 }} spin />
+  
+  useEffect(() => {
+    console.log(bitcoin)
+  },[bitcoin]);
   return (
     <C.Container>
       {
@@ -21,15 +25,15 @@ const Cards: React.FC = () => {
               <>
                 <C.Prices key={key}>
                   <img alt="usd" src={Usd} style={{ width: '8%' }} />
-                  <C.Span>|</C.Span>&#36; {res.bpi.USD.rate_float.toLocaleString('pt-BR', { maximumFractionDigits: 2 })}
+                  <C.Span>|</C.Span>&#36; {res.bpi.USD.rate_float.toLocaleString('pt-BR', { maximumFractionDigits: 2, minimumFractionDigits: 2 })}
                 </C.Prices>
                 <C.Prices>
                   <img alt="gbp" src={Gbp} style={{ width: '8%' }} />
-                  <C.Span>|</C.Span>&pound; {res.bpi.GBP.rate_float.toLocaleString('pt-BR', { maximumFractionDigits: 2, })}
+                  <C.Span>|</C.Span>&pound; {res.bpi.GBP.rate_float.toLocaleString('pt-BR', { maximumFractionDigits: 2, minimumFractionDigits: 2 })}
                 </C.Prices>
                 <C.Prices>
                   <img alt="uer" src={Uer} style={{ width: '8%' }} />
-                  <C.Span>|</C.Span>&euro; {res.bpi.EUR.rate_float.toLocaleString('pt-BR', { maximumFractionDigits: 2, })}
+                  <C.Span>|</C.Span>&euro; {res.bpi.EUR.rate_float.toLocaleString('pt-BR', { maximumFractionDigits: 2, minimumFractionDigits: 2 })}
                 </C.Prices>
               </>))}
           </C.Cards>

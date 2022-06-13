@@ -8,21 +8,24 @@ import { Spin } from 'antd';
 
 const Charts: React.FC = () => {
 
-  const { coinHistorical, loading } = useContext(GlobalStateContext)
+  const { coinKey, coinValue, loading } = useContext(GlobalStateContext)
 
   const antIcon = <LoadingOutlined style={{ fontSize: 50 }} spin />
-  const key = coinHistorical.map((res) => (Object.keys(res.bpi)))
-  const value = coinHistorical.map((res) => (Object.values(res.bpi)))
 
+
+  const date = coinKey.slice([-1][0]-6)
+  const value = coinValue.slice([-1][0]-6)
+    
   const options: ApexOptions = {
     xaxis: {
-      categories: key[0]
-    }
+      categories: date
+    },
   }
+  
   const series: any = [
     {
       name: "Dolar",
-      data: value[0]
+      data: value
     },
   ];
 
@@ -35,8 +38,8 @@ const Charts: React.FC = () => {
             options={options}
             series={series}
             type="line"
-            height={450}
-            width={700}
+            height={400}
+            style={{width: '100%'}}
           />
         ) : (
           <>

@@ -4,8 +4,10 @@ import { GlobalContextType } from '../types/globalContextType'
 const initialValue = {
     bitcoin: [],
     setBitcoin: () => { },
-    coinHistorical: [],
-    setCoinHistorical: () => { },
+    coinKey: [],
+    setCoinKey: () => { },
+    coinValue: [],
+    setCoinValue: () => { },
     loading: false,
     setLoading: () => { }
 
