@@ -1,5 +1,5 @@
 import Header from './components/Header'
-import * as C from './Styled.App'
+import * as S from './Styled.App'
 
 import Cards from './components/Cards'
 import Chart from './components/Chart'
@@ -8,30 +8,30 @@ import { GlobalStyled } from './Globalstyled'
 import GlobalState from './GlobalContext/GlobalState';
 import { FaBitcoin } from 'react-icons/fa'
 
-function App() {
+const App = () => {
 
   return (
     <>
       <GlobalState>
         <GlobalStyled />
-        <C.Container>
+        <S.Container>
           <Header />
-          <C.Section>
-            <C.ContainerSection>
+          <S.Section>
+            <S.ContainerSection>
               <FaBitcoin style={{ fontSize: '4rem', color: 'E3AE14' }} />
-              <C.Text>Bitcoin</C.Text>
-              <C.P>BTC</C.P>
-            </C.ContainerSection>
-          </C.Section>
-          <C.Main>
-            <C.SectionLeft>
+              <S.Text>Bitcoin</S.Text>
+              <S.P>BTC</S.P>
+            </S.ContainerSection>
+          </S.Section>
+          <S.Main>
+            <S.SectionLeft>
               <Cards />
-            </C.SectionLeft>
-            <C.SectionRight>
+            </S.SectionLeft>
+            <S.SectionRight>
               <Chart />
-            </C.SectionRight>
-          </C.Main>
-        </C.Container>
+            </S.SectionRight>
+          </S.Main>
+        </S.Container>
       </GlobalState>
     </>
   );

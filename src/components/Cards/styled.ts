@@ -18,6 +18,10 @@ export const Cards = styled.div`
   }
   
 `
+export const Img = styled.img`
+  width: 8%;
+  
+`
 export const Prices = styled.div`
   width: 80%;
   height: 10vh;

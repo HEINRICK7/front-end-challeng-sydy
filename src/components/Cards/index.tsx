@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from 'react'
 import { LoadingOutlined } from '@ant-design/icons';
 import { GlobalStateContext } from '../../GlobalContext/GlobalStateContext'
 import { Spin } from 'antd';
-import * as C from './styled'
+import * as S from './styled'
 
 import Usd from '../../assets/estados-unidos.png'
 import Gbp from '../../assets/reino-unido.png'
@@ -16,37 +16,37 @@ const Cards: React.FC = () => {
     console.log(bitcoin)
   },[bitcoin]);
   return (
-    <C.Container>
+    <S.Container>
       {
         loading ? (
 
-          <C.Cards>
+          <S.Cards>
             {bitcoin.map((res, key) => (
               <>
-                <C.Prices key={key}>
-                  <img alt="usd" src={Usd} style={{ width: '8%' }} />
-                  <C.Span>|</C.Span>&#36; {res.bpi.USD.rate_float.toLocaleString('pt-BR', { maximumFractionDigits: 2, minimumFractionDigits: 2 })}
-                </C.Prices>
-                <C.Prices>
-                  <img alt="gbp" src={Gbp} style={{ width: '8%' }} />
-                  <C.Span>|</C.Span>&pound; {res.bpi.GBP.rate_float.toLocaleString('pt-BR', { maximumFractionDigits: 2, minimumFractionDigits: 2 })}
-                </C.Prices>
-                <C.Prices>
-                  <img alt="uer" src={Uer} style={{ width: '8%' }} />
-                  <C.Span>|</C.Span>&euro; {res.bpi.EUR.rate_float.toLocaleString('pt-BR', { maximumFractionDigits: 2, minimumFractionDigits: 2 })}
-                </C.Prices>
+                <S.Prices key={key}>
+                  <S.Img alt="usd" src={Usd} />
+                  <S.Span>|</S.Span>&#36; {res.bpi.USD.rate_float.toLocaleString('pt-BR', { maximumFractionDigits: 2, minimumFractionDigits: 2 })}
+                </S.Prices>
+                <S.Prices>
+                  <S.Img alt="gbp" src={Gbp} />
+                  <S.Span>|</S.Span>&pound; {res.bpi.GBP.rate_float.toLocaleString('pt-BR', { maximumFractionDigits: 2, minimumFractionDigits: 2 })}
+                </S.Prices>
+                <S.Prices>
+                  <S.Img alt="uer" src={Uer} />
+                  <S.Span>|</S.Span>&euro; {res.bpi.EUR.rate_float.toLocaleString('pt-BR', { maximumFractionDigits: 2, minimumFractionDigits: 2 })}
+                </S.Prices>
               </>))}
-          </C.Cards>
+          </S.Cards>
         ) : (
           <>
-            <C.Cards>
+            <S.Cards>
               <Spin tip="Loading..." indicator={antIcon} />
-            </C.Cards>
+            </S.Cards>
           </>
         )
       }
 
-    </C.Container>
+    </S.Container>
   );
 }
 
