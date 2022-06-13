@@ -82,8 +82,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 #### **Website**  ([ReactJs](https://reactjs.org/))
 
--   **[React Router Dom](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom)**
 -   **[React Icons](https://react-icons.github.io/react-icons/)**
+-   **[Apexcharts](https://apexcharts.com/)**
 -   **[Axios](https://github.com/axios/axios)**
 -   **[Antd](https://ant.design/)**
 -   **[styled-components](https://styled-components.com/)**
