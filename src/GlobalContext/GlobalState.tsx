@@ -22,6 +22,10 @@ const GlobalState = ({ children }: GlobalcontextProps) => {
                 console.log(error.response.message)
             })
 
+    }, []);
+
+    useEffect(() => {
+
         api.get('/historical/close.json')
         .then(response => {
             setCoinKey(Object.keys(response.data.bpi));
@@ -31,6 +35,7 @@ const GlobalState = ({ children }: GlobalcontextProps) => {
         .catch((error) => {
             console.log(error.response.message)
         })
+
     }, []);
 
     return (

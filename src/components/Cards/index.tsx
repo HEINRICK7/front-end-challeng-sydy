@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext } from 'react'
 import { LoadingOutlined } from '@ant-design/icons';
 import { GlobalStateContext } from '../../GlobalContext/GlobalStateContext'
 import { Spin } from 'antd';
@@ -12,9 +12,6 @@ const Cards: React.FC = () => {
   const { bitcoin, loading } = useContext(GlobalStateContext)
   const antIcon = <LoadingOutlined style={{ fontSize: 50 }} spin />
   
-  useEffect(() => {
-    console.log(bitcoin)
-  },[bitcoin]);
   return (
     <S.Container>
       {
